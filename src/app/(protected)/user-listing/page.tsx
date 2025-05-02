@@ -25,6 +25,7 @@ const UserPage = () => {
     fetchUsers();
   }, []);
 
+ 
   if (loading) return <p>Loading...</p>;
 
   return (
@@ -34,6 +35,8 @@ const UserPage = () => {
       {users.map((user: User, index: number) => (
         <li key={user._id || `user-${index}`} className="border p-2 rounded">
             {user.fullName} ({user.email})
+
+            {/* <span className="" onClick={deleteHandler}>Delete</span> */}
         </li>
         ))}
       </ul>
