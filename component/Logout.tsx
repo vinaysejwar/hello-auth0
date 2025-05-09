@@ -1,5 +1,5 @@
 'use client'
-import LogoutModal from '@/modals/LogoutModal'
+import LogoutModal from '../modals/LogoutModal'
 import { Button } from 'antd'
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
