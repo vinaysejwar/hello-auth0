@@ -2,7 +2,7 @@
 
 import { Button } from "antd";
 import Image from "next/image";
-import type { User } from "@/app/lib/auth";
+import type { User } from "../../lib/auth";
 import { toast } from "react-toastify";
 // import Logout from "@/component/Logout";
 

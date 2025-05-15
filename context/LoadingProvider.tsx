@@ -1,6 +1,6 @@
 
 "use client";
-import Loader from "@/component/Loader";
+import Loader from "../component/Loader";
 import { createContext, useContext, useState, ReactNode } from "react";
 
 interface LoadingContextProps {

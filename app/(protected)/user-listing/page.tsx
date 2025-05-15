@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getUsers } from "@/services/userService";
+import { getUsers } from "../../../services/userService"; // Adjust the import path as necessary
 
 export const dynamic = 'force-dynamic';
 

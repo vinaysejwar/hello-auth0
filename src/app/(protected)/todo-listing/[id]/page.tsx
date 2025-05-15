@@ -28,7 +28,7 @@ const TodoDetailPage = () => {
         try {
           const res = await axios.get(`/api/todos/${id}`);
           setTodo(res.data);
-        } catch (err: any) {
+        } catch (err) {
           console.error("Error fetching todo detail:", err);
           setError("Failed to load todo");
         } finally {

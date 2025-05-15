@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Button, Form, Modal, Input } from "antd";
-import { User } from "@/app/lib/auth"; // Adjust path to match your actual `User` type
+import { User } from "../app/lib/auth"; // Adjust path to match your actual `User` type
 
 interface AddEditUserModalProps {
   isOpen: boolean;
