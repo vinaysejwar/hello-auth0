@@ -39,6 +39,20 @@ export default function Navbar() {
               >
                 Users
               </Link>
+              <Link
+                href="/todo-listing"
+                className="border-b-2 border-transparent hover:border-blue-500 inline-flex items-center px-1 pt-1 text-gray-500 hover:text-gray-700"
+              >
+                Todos
+              </Link>
+              {user?.email === 'vinay.shantiinfotech+10@gmail.com' && (
+                <Link 
+                  href="/admin" 
+                  className="border-b-2 border-transparent hover:border-blue-500 inline-flex items-center px-1 pt-1 text-gray-500 hover:text-gray-700"
+                >
+                  Admin Panel
+                </Link>
+              )}
             </div>
           </div>
 

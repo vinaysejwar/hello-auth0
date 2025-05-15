@@ -1,4 +1,4 @@
-import axios from "@/app/lib/axios";
+import axios from "../app/lib/axios";
 
 export const getUsers = async () => {
   try {

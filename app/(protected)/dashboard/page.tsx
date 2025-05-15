@@ -1,7 +1,7 @@
 import { getSession } from '@auth0/nextjs-auth0';
 import DashboardClient from './DashboardClient';
 import { redirect } from 'next/navigation';
-import type { User } from '@/app/lib/auth';
+import type { User } from '../..//lib/auth';
 
 export const dynamic = "force-dynamic";
 export default async function Dashboard() {

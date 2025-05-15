@@ -2,7 +2,7 @@
 
 import { Button } from "antd";
 import Image from "next/image";
-import type { User } from "@/app/lib/auth";
+import type { User } from "../../lib/auth";
 import { toast } from "react-toastify";
 // import Logout from "@/component/Logout";
 
@@ -46,7 +46,15 @@ export default function DashboardClient({ userDetails }: DashboardClientProps) {
               </h2>
               <p className="text-gray-600">{userDetails.email}</p>
             </div>
-          </div>
+          </div>  
+          <p>nickname: {userDetails?.nickname}</p>
+          <p>name: {userDetails?.name}</p>
+          <p>sid: {userDetails?.sid}</p>
+          <p>sub: {userDetails?.sub}</p>
+          <p>updated_at: {userDetails?.updated_at.toString()}</p>
+          <p>id: {userDetails?.id || "N/A"}</p>
+          <p>auth0_id: {userDetails?.auth0_id || "N/A"}</p>
+
 
           <Button type="primary" onClick={handleToast}>
             Show Toast
