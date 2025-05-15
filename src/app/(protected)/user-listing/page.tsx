@@ -30,7 +30,8 @@ const UserPage = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">Users</h1>
+      <h1 className="text-xl font-bold mb-4">Users Todo list</h1>
+
       <ul className="space-y-2">
       {users.map((user: User, index: number) => (
         <li key={user._id || `user-${index}`} className="border p-2 rounded">

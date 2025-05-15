@@ -14,7 +14,8 @@ const nextConfig = {
       'avatars.githubusercontent.com', 
       'images.unsplash.com', 
       'i.pravatar.cc', 
-      'avatars.dicebear.com',
+      'avatars.dicebear.com', 
+      'cdn.auth0.com'
     ],
   },
   async headers() {

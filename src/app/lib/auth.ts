@@ -25,8 +25,12 @@ export async function getEdgeSession() {
 // Type for the user object
 export interface User {
   id: number;
+  nickname: string;
   name: string;
   email: string;
   picture: string;
   sub: string;
+  sid: string;
+  updated_at: Date;
+  auth0_id: string;
 } 
